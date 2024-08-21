@@ -1,9 +1,9 @@
 // src/pages/ConfirmaYPaga.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SelectorMetodoPago from '../../components/pago/SelectorMetodoPago';
-import InfoHabitacion from '../../components/pago/InfoHabitacion';
-import InfoPrecio from '../../components/pago/InfoPrecio';
+import SelectorMetodoPago from '../../components/metodosPago/SelectorMetodoPago';
+import InfoHabitacion from '../../components/informacionHabitacion/InfoHabitacion';
+import InfoPrecio from '../../components/informacionHabitacion/InfoPrecio';
 import InfoDireccion from '../../components/pago/InfoDireccion';
 import Header from '../../components/pago/Header';
 import Footer from '../../components/footer/Footer';

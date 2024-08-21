@@ -1,7 +1,7 @@
 // src/pages/ConfirmaYPaga.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SelectorMetodoPago from '../../components/pago/SelectorMetodoPago';
+import SelectorMetodoPago from '../../components';
 import InfoHabitacion from '../../components/pago/InfoHabitacion';
 import InfoPrecio from '../../components/pago/InfoPrecio';
 import InfoDireccion from '../../components/pago/InfoDireccion';

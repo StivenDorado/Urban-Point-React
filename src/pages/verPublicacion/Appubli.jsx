@@ -1,10 +1,10 @@
 import './App.css'
-import Footer from '../../components/footer/Footer';
+import Footer from '../../components/footers/Footer';
 
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HeaderFotos from '../../components/Publicacion/HeaderFotos';
-import SeccionFotos from '../../components/Publicacion/SeccionFotos';
+import HeaderFotos from '../../components/header/headerFotos';
+import SeccionFotos from '../../components/publicacion/SeccionFotos';
 import Ofrecer from '../../components/Publicacion/OfrecerReserva';
 import Info from '../../components/Publicacion/Infopublicacion';
 
