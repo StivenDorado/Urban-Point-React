@@ -5,8 +5,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderFotos from '../../components/header/headerFotos';
 import SeccionFotos from '../../components/publicacion/SeccionFotos';
-import Ofrecer from '../../components/Publicacion/OfrecerReserva';
-import Info from '../../components/Publicacion/Infopublicacion';
+import Ofrecer from '../../components/publicacion/OfrecerReserva';
+import Info from '../../components/publicacion/Infopublicacion';
 
 function Appubli() {
   return (

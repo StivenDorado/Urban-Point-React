@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import SelectorMetodoPago from '../../components/metodosPago/SelectorMetodoPago';
 import InfoHabitacion from '../../components/informacionHabitacion/InfoHabitacion';
 import InfoPrecio from '../../components/informacionHabitacion/InfoPrecio';
-import InfoDireccion from '../../components/pago/InfoDireccion';
-import Header from '../../components/pago/Header';
-import Footer from '../../components/footer/Footer';
+import InfoDireccion from '../../components/informacionHabitacion/InfoDireccion';
+import Header from '../../components/header/Header';
+import Footer from '../../components/footers/Footer';
 
 const ConfirmaYPaga = () => {
   const [metodoSeleccionado, setMetodoSeleccionado] = useState('Bancolombia');

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route , Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "../components/header/headerlg";
 import Iniciosesion from "../pages/inicioSesion/iniciosesion";
 import Registrarse from "../pages/inicioSesion/registrarse";  
@@ -9,6 +9,7 @@ import ConfirmaYPaga from "../pages/pago/ConfirmaYPaga";
 import Codigo from "../pages/inicioSesion/codigo";
 import Confirmacion from "../pages/inicioSesion/confirmacion";
 import Centro from "../pages/centroAyuda/centro";
+
 import ConsejoBusqueda from "../pages/centroAyuda/Busqueda y reservaciones/ConsejoBusqueda";
 import ReservarAlojamiento from "../pages/centroAyuda/Busqueda y reservaciones/ReservarAlojamiento";
 import ReservarCitas from "../pages/centroAyuda/Busqueda y reservaciones/ReservarCitas";
@@ -32,42 +33,41 @@ import Incumplimiento from "../pages/centroAyuda/politicas-reglas/Incumplimiento
 
 export const AppRouter = () => {
     return (
-        
-    <>
-     <Routes>
-      <Route path="/"element={<Header />}>
-       <Route index element={<Landing />} />
-       <Route path="iniciosesion" element={<Iniciosesion />}/>
-       <Route path="registrarse" element={<Registrarse />}/>
-       <Route path="appubli/*" element={<Appubli />}/>
-       <Route path="confirmaypaga" element={<ConfirmaYPaga />}/>
-       <Route path="codigo" element={<Codigo />}/>
-       <Route path="confirmacion" element={<Confirmacion />}/>
-       <Route path="centro" element={<Centro />}/>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Header />}>
+                    <Route index element={<Landing />} />
+                    <Route path="iniciosesion" element={<Iniciosesion />} />
+                    <Route path="registrarse" element={<Registrarse />} />
+                    <Route path="appubli/*" element={<Appubli />} />
+                    <Route path="confirmaypaga" element={<ConfirmaYPaga />} />
+                    <Route path="codigo" element={<Codigo />} />
+                    <Route path="confirmacion" element={<Confirmacion />} />
+                    <Route path="centro" element={<Centro />} />
 
-       <Route path="consejobusqueda" element={<ConsejoBusqueda />}/>
-       <Route path="reservaralojamiento" element={<ReservarAlojamiento />}/>
-       <Route path="reservarcitas" element={<ReservarCitas />}/>
-       <Route path="enviarmensajes" element={<EnviarMensajes/>}/>
+                    <Route path="consejobusqueda" element={<ConsejoBusqueda />} />
+                    <Route path="reservaralojamiento" element={<ReservarAlojamiento />} />
+                    <Route path="reservarcitas" element={<ReservarCitas />} />
+                    <Route path="enviarmensajes" element={<EnviarMensajes />} />
 
-       <Route path="temasseguridad" element={<TemasSeguridad />}/>
-       <Route path="problemasreportes" element={<ProblemasReportes />}/>
+                    <Route path="temasseguridad" element={<TemasSeguridad />} />
+                    <Route path="problemasreportes" element={<ProblemasReportes />} />
 
-       <Route path="quienessomos" element={<QuienesSomos/>}/>
-       <Route path="funcionamiento" element={<Funcionamiento />}/>
-       <Route path="reglas" element={<Reglas />}/>
+                    <Route path="quienessomos" element={<QuienesSomos />} />
+                    <Route path="funcionamiento" element={<Funcionamiento />} />
+                    <Route path="reglas" element={<Reglas />} />
 
-       <Route path="estado" element={<Estado/>}/>
-       <Route path="cancelaciones" element={<Cancelaciones />}/>
-       <Route path="problemas" element={<Problemas />}/>
+                    <Route path="estado" element={<Estado />} />
+                    <Route path="cancelaciones" element={<Cancelaciones />} />
+                    <Route path="problemas" element={<Problemas />} />
 
-       <Route path="comofunciona" element={<ComoFunciona />}/>
-       <Route path="implementando" element={<Implementando />}/>
+                    <Route path="comofunciona" element={<ComoFunciona />} />
+                    <Route path="implementando" element={<Implementando />} />
 
-       <Route path="politicas" element={<Politicas />}/>
-       <Route path="incumplimiento" element={<Incumplimiento />}/>
-      </Route>
-     </Routes>
-    </>
+                    <Route path="politicas" element={<Politicas />} />
+                    <Route path="incumplimiento" element={<Incumplimiento />} />
+                </Route>
+            </Routes>
+        </Router>
     );
 };
